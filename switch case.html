@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+</html>
+
+<head>
+    <title>Exercise - switch case</title>
+</head>
+
+<body>
+
+    <script>
+        // 1
+        function isEvenOrOdd(num) {
+            const rem = num % 2
+
+            switch (rem) {
+                case 0:
+                    return "Even"
+                    break;
+
+                default:
+                    return "Odd"
+                    break;
+            }
+        }
+
+        // 2 
+        function isNegOrPos(num) {
+            const isNeg = num < 0
+
+            switch (isNeg) {
+                case true:
+                    return "Negative"
+                    break;
+
+                default:
+                    return "Positive or zero"
+                    break;
+            }
+        }
+
+        // 3
+        function getDay(num) {
+            switch (num) {
+                case 1:
+                    return "Sunday"
+                    break;
+                case 2:
+                    return "Monday"
+                    break;
+                case 3:
+                    return "Tuesday"
+                    break;
+                case 4:
+                    return "Wednesday"
+                    break;
+                case 5:
+                    return "Thursday"
+                    break;
+                case 6:
+                    return "Friday"
+                    break;
+                case 7:
+                    return "Saturday"
+                    break;
+
+                default:
+                    return "Please enter another number"
+                    break;
+            }
+        }
+
+        // 4
+        function getMonth(num) {
+            switch (num) {
+                case 1:
+                    return "Jan"
+                    break;
+                case 2:
+                    return "Feb"
+                    break;
+                case 3:
+                    return "Mar"
+                    break;
+                case 4:
+                    return "Apr"
+                    break;
+                case 5:
+                    return "May"
+                    break;
+                case 6:
+                    return "Jun"
+                    break;
+                case 7:
+                    return "Jul"
+                    break;
+                case 8:
+                    return "Aug"
+                    break;
+                case 9:
+                    return "Sep"
+                    break;
+                case 10:
+                    return "Oct"
+                    break;
+                case 11:
+                    return "Nov"
+                    break;
+                case 12:
+                    return "Dec"
+                    break;
+
+                default:
+                    return "Please enter another number"
+                    break;
+            }
+        }
+
+        // 5
+        function isVowalOrConsonant(letter) {
+            letter = letter.toLowerCase()
+
+            switch (letter) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                case 'y':
+                    return "Vowel"
+                    break;
+
+                default:
+                    return "Consonant"
+                    break;
+            }
+        }
+
+        // 6
+        function getGrade(num) {
+            switch (true) {
+                case num < 0:
+                case num > 100:
+                    return "Enter a number between 0-100"
+                    break;
+
+                case num <= 20:
+                    return "D"
+                    break;
+                case num <= 55:
+                    return "C"
+                    break;
+                case num <= 70:
+                    return "B"
+                    break;
+                case num <= 90:
+                    return "A"
+                    break;
+                default:
+                    return "A+"
+                    break;
+            }
+        }
+
+        // 7
+        function calculate(num1, num2, operator) {
+            switch (operator) {
+                case 1:
+                    return num1 + num2
+                    break;
+                case 2:
+                    return num1 - num2
+                    break;
+                case 3:
+                    return num1 / num2
+                    break;
+                case 4:
+                    return num1 * num2
+                    break;
+
+                default:
+                    return "operator should be between 1 and 4"
+                    break;
+            }
+        }
+
+        // util functions
+
+        function print(element) {
+            document.write(`${element} `)
+        }
+
+        function break_line() {
+            document.write(`<br />`)
+        }     
+    </script>
+
+</body>
+
+</html>
