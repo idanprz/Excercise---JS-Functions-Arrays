@@ -9,153 +9,189 @@
 <body>
 
     <script>
-        // 1
-        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-        print("Ex1:")
-        break_line()
-        print(days)
-        break_line()
-        print(sortArray(days))
-        break_line()
-        break_line()
+        // // 1
+        // let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        // print("Ex1:")
+        // break_line()
+        // print(days)
+        // break_line()
+        // print(sortArray(days))
+        // break_line()
+        // break_line()
 
-        function sortArray(arr) {
-            return arr.sort()
-        }
+        // function sortArray(arr) {
+        //     return arr.sort()
+        // }
 
-        // 2
-        let nums = [1, 2, 3, 4, 5]
-        print("Ex2:")
-        break_line()
-        print(getVal(nums, -3))
-        break_line()
-        print(getVal(nums, 0))
-        break_line()
-        print(getVal(nums, 4))
-        break_line()
-        print(getVal(nums, 800))
-        break_line()
-        break_line()
+        // // 2
+        // let nums = [1, 2, 3, 4, 5]
+        // print("Ex2:")
+        // break_line()
+        // print(getVal(nums, -3))
+        // break_line()
+        // print(getVal(nums, 0))
+        // break_line()
+        // print(getVal(nums, 4))
+        // break_line()
+        // print(getVal(nums, 800))
+        // break_line()
+        // break_line()
 
-        function getVal(arr, index) {
-            if (index > arr.length - 1 || index < 0) {
-                return `Sorry, no value in the array for index number: ${index}`
-            }
+        // function getVal(arr, index) {
+        //     if (index > arr.length - 1 || index < 0) {
+        //         return `Sorry, no value in the array for index number: ${index}`
+        //     }
 
-            return arr[index]
-        }
+        //     return arr[index]
+        // }
 
-        // 3
-        print("Ex3:")
-        break_line()
-        print(isArrayOfOdds([1, 2, 3, 4]))
-        break_line()
-        print(isArrayOfOdds([1, 801, 55, -3]))
-        break_line()
-        break_line()
+        // // 3
+        // print("Ex3:")
+        // break_line()
+        // print(isArrayOfOdds([1, 2, 3, 4]))
+        // break_line()
+        // print(isArrayOfOdds([1, 801, 55, -3]))
+        // break_line()
+        // break_line()
 
-        function isArrayOfOdds(arr) {
-            if (arr.every(isOdd)) {
-                return "All odd"
-            }
+        // function isArrayOfOdds(arr) {
+        //     if (arr.every(isOdd)) {
+        //         return "All odd"
+        //     }
 
-            return "Not all odd"
-        }
+        //     return "Not all odd"
+        // }
 
-        function isOdd(num) {
-            return Math.abs(num) % 2 == 1
-        }
+        // function isOdd(num) {
+        //     return Math.abs(num) % 2 == 1
+        // }
 
-        // 4
-        const THRESHOLD = 10
-        const INC_VAL = 5
+        // // 4
+        // const THRESHOLD = 10
+        // const INC_VAL = 5
 
-        let arr = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5,]
-        incrementElementsBelowThreshold(arr)
+        // let arr = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5,]
+        // incrementElementsBelowThreshold(arr)
 
-        print("Ex4:")
-        break_line()
-        print(arr)
-        break_line()
-        break_line()
+        // print("Ex4:")
+        // break_line()
+        // print(arr)
+        // break_line()
+        // break_line()
 
-        function incrementElementsBelowThreshold(arr) {
-            arr.forEach((element, index) => {
-                if (index < THRESHOLD) {
-                    arr[index] += INC_VAL
-                }
-            })
-        }
+        // function incrementElementsBelowThreshold(arr) {
+        //     arr.forEach((element, index) => {
+        //         if (index < THRESHOLD) {
+        //             arr[index] += INC_VAL
+        //         }
+        //     })
+        // }
 
-        // 5
-        print("Ex5:")
-        break_line()
-        print(isContainedInArray([1, 7, -2, 987, -666], -2))
-        break_line()
-        print(isContainedInArray([1, 7, -2, 987, -666], 2))
-        break_line()
-        break_line()
+        // // 5
+        // print("Ex5:")
+        // break_line()
+        // print(isContainedInArray([1, 7, -2, 987, -666], -2))
+        // break_line()
+        // print(isContainedInArray([1, 7, -2, 987, -666], 2))
+        // break_line()
+        // break_line()
 
-        function isContainedInArray(arr, lookupVal) {
-            if (-1 != arr.indexOf(lookupVal, 0)) {
-                return "found"
-            }
+        // function isContainedInArray(arr, lookupVal) {
+        //     if (-1 != arr.indexOf(lookupVal, 0)) {
+        //         return "found"
+        //     }
 
-            return "not found"
-        }
+        //     return "not found"
+        // }
 
-        // 6
-        print("Ex6:")
-        break_line()
-        print(isFirstAndLastInArray([1, 7, -2, 987, -666], 1, -666))
-        break_line()
-        print(isFirstAndLastInArray([1, 7, -2, 987, -666], -5, 600))
-        break_line()
-        print(isFirstAndLastInArray([], -5, 600))
-        break_line()
-        break_line()
+        // // 6
+        // print("Ex6:")
+        // break_line()
+        // print(isFirstAndLastInArray([1, 7, -2, 987, -666], 1, -666))
+        // break_line()
+        // print(isFirstAndLastInArray([1, 7, -2, 987, -666], -5, 600))
+        // break_line()
+        // print(isFirstAndLastInArray([], -5, 600))
+        // break_line()
+        // break_line()
 
-        function isFirstAndLastInArray(arr, first, last) {
-            let len = arr.length
+        // function isFirstAndLastInArray(arr, first, last) {
+        //     let len = arr.length
 
-            if (len != 0 && arr[0] == first && arr[len - 1] == last) {
-                return true
-            }
+        //     if (len != 0 && arr[0] == first && arr[len - 1] == last) {
+        //         return true
+        //     }
 
-            return false
-        }
+        //     return false
+        // }
 
         // 7
         print("Ex7:")
         let arr7 = [155, 5, 50, 999, 205, 51, 75, 100, -2, 101, 201, 200]
 
         break_line()
-        print(isWithinRanges([155, 5, 50]))
+        print(isWithinRanges([201, 201, 300]))
         break_line()
         break_line()
+
+        // sort, check first last ranges
 
 
         function isWithinRanges(arr) {
+            const min = Math.min(...arr)
+            const max = Math.max(...arr)
 
-            if (arr.every(elem => elem < 50)) {
-                return "smaller than 50"
-            }
-            else if (arr.every(elem => elem < 100)) {
-                return "between 51 and 100"
-            }
-            else if (arr.every(elem => elem <= 200)) {
-                return "between 101 and 200"
-            }
-            else if (arr.every(elem => elem > 200)) {
-                return "greater than 200"
+            const rangeCondMin = getRangeCondition(min)
+            const rangeCondMax = getRangeCondition(max)
+
+            let ret = ""
+
+            // not within the same range
+            if (rangeCondMin != rangeCondMax) {
+                ret = "No condition is happening"
             }
             else {
-                return "no condition is happening"
+                // within the same range
+                switch (rangeCondMin) {
+                    case 0:
+                        ret = "smaller than 50"
+                        break;
+                    case 1:
+                        ret = "between 51 to 100"
+                        break;
+                    case 2:
+                        ret = "between 101 to 200"
+                        break;
+                    case 3:
+                        ret = "greater than 200"
+                        break;
+                    default:
+                        ret = "Error"
+                        break;
+                }
             }
+
+            return ret
         }
 
-        function isBetween() {
+        // 0: num<=50, 1: 50>num>=100, 2: 100>num>=200, 3: num>=201  
+        function getRangeCondition(num) {
+            let ret = 0
 
+            if (num < 51) {
+                ret = 0
+            }
+            else if (num < 101) {
+                ret = 1
+            }
+            else if (num < 201) {
+                ret = 2
+            }
+            else {
+                ret = 3
+            }
+
+            return ret
         }
 
         // util functions
