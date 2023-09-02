@@ -10,11 +10,33 @@
 
     <script>
         // 1
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        print("Ex1:")
+        break_line()
+        print(days)
+        break_line()
+        print(sortArray(days))
+        break_line()
+        break_line()
+
         function sortArray(arr) {
             return arr.sort()
         }
 
         // 2
+        let nums = [1, 2, 3, 4, 5]
+        print("Ex2:")
+        break_line()
+        print(getVal(nums, -3))
+        break_line()
+        print(getVal(nums, 0))
+        break_line()
+        print(getVal(nums, 4))
+        break_line()
+        print(getVal(nums, 800))
+        break_line()
+        break_line()
+
         function getVal(arr, index) {
             if (index > arr.length - 1 || index < 0) {
                 return `Sorry, no value in the array for index number: ${index}`
@@ -24,6 +46,14 @@
         }
 
         // 3
+        print("Ex3:")
+        break_line()
+        print(isArrayOfOdds([1, 2, 3, 4]))
+        break_line()
+        print(isArrayOfOdds([1, 801, 55, -3]))
+        break_line()
+        break_line()
+
         function isArrayOfOdds(arr) {
             if (arr.every(isOdd)) {
                 return "All odd"
@@ -39,6 +69,16 @@
         // 4
         const THRESHOLD = 10
         const INC_VAL = 5
+
+        let arr = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5,]
+        incrementElementsBelowThreshold(arr)
+
+        print("Ex4:")
+        break_line()
+        print(arr)
+        break_line()
+        break_line()
+
         function incrementElementsBelowThreshold(arr) {
             arr.forEach((element, index) => {
                 if (index < THRESHOLD) {
@@ -48,6 +88,14 @@
         }
 
         // 5
+        print("Ex5:")
+        break_line()
+        print(isContainedInArray([1, 7, -2, 987, -666], -2))
+        break_line()
+        print(isContainedInArray([1, 7, -2, 987, -666], 2))
+        break_line()
+        break_line()
+
         function isContainedInArray(arr, lookupVal) {
             if (-1 != arr.indexOf(lookupVal, 0)) {
                 return "found"
@@ -57,6 +105,16 @@
         }
 
         // 6
+        print("Ex6:")
+        break_line()
+        print(isFirstAndLastInArray([1, 7, -2, 987, -666], 1, -666))
+        break_line()
+        print(isFirstAndLastInArray([1, 7, -2, 987, -666], -5, 600))
+        break_line()
+        print(isFirstAndLastInArray([], -5, 600))
+        break_line()
+        break_line()
+
         function isFirstAndLastInArray(arr, first, last) {
             let len = arr.length
 
@@ -68,7 +126,27 @@
         }
 
         // 7
-        // find min and max elements and compare range conditions
+        print("Ex7:")
+        let arr7 = [155, 5, 50, 999, 205, 51, 75, 100, -2, 101, 201, 200]
+        
+        break_line()
+        print(isWithinRanges([777, 0, -300]))
+        break_line()
+        print(isWithinRanges([-3, 5.5, 50]))
+        break_line()
+        print(isWithinRanges([51, 77, 100]))        
+        break_line()
+        print(isWithinRanges([101, 111, 200]))
+        break_line()
+        print(isWithinRanges([201, 201, 300]))
+        break_line()
+        print(isWithinRanges([-777, 0, 377700]))
+        break_line()
+        break_line()
+
+        // sort, check first last ranges
+
+
         function isWithinRanges(arr) {
             const min = Math.min(...arr)
             const max = Math.max(...arr)
@@ -106,7 +184,6 @@
             return ret
         }
 
-        // return values - 
         // 0: num<=50, 1: 50>num>=100, 2: 100>num>=200, 3: num>=201  
         function getRangeCondition(num) {
             let ret = 0
@@ -126,6 +203,16 @@
 
             return ret
         }
+
+        // util functions
+
+        function print(element) {
+            document.write(`${element} `)
+        }
+
+        function break_line() {
+            document.write(`<br />`)
+        }     
     </script>
 
 </body>
